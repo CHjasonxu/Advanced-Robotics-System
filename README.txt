@@ -1,5 +1,5 @@
 
-StudentName: Zhongjie Xu StudentID:190622114
+
 
 First Step: Extract the 190622114_ar_week4_test.zip file. This file contains package,video and README file.
 
