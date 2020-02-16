@@ -1,7 +1,7 @@
 
 
 
-First Step: Extract the 190622114_ar_week4_test.zip file. This file contains package,video and README file.
+First Step: Extract the.zip file. This file contains package,video and README file.
 
 Second Step: Put the package(ar_week4_test) in the /catkin_ws/src
 
