@@ -1,0 +1,10 @@
+<launch>
+	<arg name="node_start_delay" default="25.0" /> 
+	<node pkg="ar_week4_test" type="plot_cubic_traj.py" name="plot_cubic_traj"/>
+	<node pkg="ar_week4_test" type="compute_cubic_coeffs.py" name="compute_cubic_coeffs"/>
+        <node pkg="ar_week4_test" type="cubic_traj_planner.py" name="cubic_traj_planner"/>
+        <node pkg="ar_week4_test" type="points_generator.py" name="points_generator" output="screen"/>
+        <node pkg="rqt_plot" type="rqt_plot" name="rqt_plot" args="/position_trajectory/data /velocity_trajectory/data /acceleration_trajectory/data" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@'"/>
+	<node pkg="rqt_graph" type="rqt_graph" name="rqt_graph"/>
+
+</launch>
